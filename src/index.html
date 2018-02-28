@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>JobMakini Recruitment</title>
+    </head>
+
+    <body id="home">
+        <!-- NAVBAR SECTION-->
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        	<!--Start container-->
+        	<div class="container">
+        		<!--Branding Area-->
+        		<a href="index.html" class="navbar-brand">JobMakini</a>
+
+        		<button class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        			<span class="navbar-toggler-icon"></span>
+        		</button>
+
+        		<div class="collapse navbar-collapse" id="navbarCollapse">
+        			<ul class="navbar-nav ml-auto">
+        				<li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        				<li class="nav-item"><a href="#about-head-section" class="nav-link">About</a></li>
+        				<li class="nav-item"><a href="#services-head-section" class="nav-link">Services</a></li>
+        				<li class="nav-item"><a href="#team-head-section" class="nav-link">Team</a></li>
+        				<li class="nav-item"><a href="#portifolio-head-section" class="nav-link">Portifolio</a></li>
+        				<li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        			</ul>
+        		</div>
+        	</div>
+        	<!--End container-->
+        </nav>
+
+        <!--HOME SECTION-->
+        <section id="home-section">
+        	<!--Start Home Section-->
+        	<div class="brown-overlay"></div>
+        	<div class="home-inner">
+                <!--Start container-->
+                <div class="container">
+            		<div class="row ">
+                        <div class="col-lg-8 d-none d-lg-block text-white">
+                            <h1 class="display-4">Build <strong>social profiles</strong> and revenue and <strong>profits</strong></h1>
+                            <div class="d-flex flex-row">
+                                <div class="p-4 align-self-start">
+                                    <i class="fa fa-check fa-2x"></i>
+                                </div>
+                                <div class="p-4 align-self-end">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur expedita explicabo eos illum veritatis iure fugiat, ipsum dolorum beatae quod!
+                                </div>
+                            </div> 
+
+                            <div class="d-flex flex-row">
+                                <div class="p-4 align-self-start">
+                                    <i class="fa fa-check fa-2x"></i>
+                                </div>
+                                <div class="p-4 align-self-end">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur expedita explicabo eos illum veritatis iure fugiat, ipsum dolorum beatae quod!
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-row">
+                                <div class="p-4 align-self-start">
+                                    <i class="fa fa-check fa-2x"></i>
+                                </div>
+                                <div class="p-4 align-self-end">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur expedita explicabo eos illum veritatis iure fugiat, ipsum dolorum beatae quod!
+                                </div>
+                           </div>   
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="card text-center card-form ">
+                                <div class="card-body text-white">
+                                    <h3>Sign Up Today</h3>
+                                    <p>Please fill out this form to register</p>
+                                    <form action="">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control form-contro-lg" placeholder="Username">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control form-contro-lg" placeholder="Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control form-contro-lg" placeholder="Password">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control form-contro-lg" placeholder="Confirm Password">
+                                        </div>
+                                        <input type="submit" class="btn btn-outline-light btn-block" value="Submit">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>      
+                    </div>
+                </div>
+                <!--End container-->
+        	</div>
+
+        	<!--End Home Section-->	
+            
+        </section>
+
+
+
+
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+
+        <script >
+            $(function () {
+                $(document).scroll(function () {// check if scroll event happened
+                    var $nav = $(".fixed-top");
+                    var width = $(window).width();
+                    //$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+                    $nav.toggleClass('scrolled', $(this).scrollTop() > 3 && width > 767 );// check if user scrolled more than 5 from top of the browser window
+                });
+            });
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,160 @@
+// Main Sass File
+$bg-color:#fff;
+$font-color:#333;
+$inner-font:#4a4a4a;
+$custom-font:#797979;
+$primary-color:#887F73;
+$image-bg-color:#929292;
+$link-scroll:#6F6F6F;
+$brand-scroll:#777;
+$brown-overlay: rgba(51, 51, 51, 0.30);
+
+
+html,body{
+	background-color: $bg-color;
+	color:$custom-font;
+	font-size: 14px;
+	width: 100%;
+	padding: 0;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: 400;
+	width: 100%;
+	font-family: 'Raleway', sans-serif;
+
+}
+
+
+
+
+nav.navbar.fixed-top{
+background: transparent;	
+}
+
+
+nav.navbar-collapse.collapse{
+	background: $bg-color !important;
+}
+
+																												
+
+nav.navbar.fixed-top ul.navbar-nav > li > a {
+	color: $bg-color;
+	font-size: 1rem;
+	font-weight: 600;
+	padding: 2.1rem 1.1rem;
+	transition: 0.3s ease-in-out;
+}
+
+
+
+/*CUSTOM TOGGLER ICON*/
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: transparent;
+} 
+
+
+
+
+/*SCROLLING EFFECT*/
+
+.fixed-top.scrolled {
+  background-color: $bg-color !important;
+  transition: background-color 300ms linear;
+
+  .nav-link{
+  	color:$link-scroll !important;
+  }
+
+  .navbar-brand{
+  	background: $brand-scroll;
+  	color: $bg-color;
+  	padding: 15px 15px;
+  }
+
+}
+
+
+
+
+/*<--SECTIONS STYLING-->*/
+
+/*<--#HOME SECTION-->*/
+#home-section{
+	background:url('../img/nubia_1280x853.jpeg')no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color:$image-bg-color;
+	background-position: center;
+	min-height: 100vh;
+	margin-bottom: 150px;
+
+
+	.brown-overlay{
+		background-color:$brown-overlay;
+		position:absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		min-height: 100vh;
+	}
+
+
+	.home-inner{
+		padding-top:200px;
+	}
+
+
+	.card-form{
+		opacity: 0.8;
+		background: transparent;
+	}
+
+
+	.fa{
+		background: $bg-color;
+		color:$primary-color;
+		padding:4px;
+		border-radius:5px;
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--MEDIA QUERIES*/
+@media (max-width: 767px){
+	nav.navbar.fixed-top{
+		background: rgba(91,91,98,0.5);
+		transition: background-color 300ms linear;
+
+		.nav-link{
+		color: $bg-color;	
+  }
+
+}
+
+	#home-section{
+		background:url('../img/nubia_640x426.jpeg')no-repeat;
+}
+
+}
